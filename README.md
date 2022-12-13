@@ -1,0 +1,1 @@
+# Association-Rule-Mining-applied-to-thyroid-dataset

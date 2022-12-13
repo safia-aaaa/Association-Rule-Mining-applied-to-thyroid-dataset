@@ -107,5 +107,6 @@ conf_rules = association_rules(frequent_itemset, metric = "confidence", min_thre
 Rules are in form of X ⇒ Y.  Where X is the antecedent and Y is the consequent. Hvaing X will lead to having Y. For Example, (tumor)⇒ (sex_F). This implies that having tumor means that patient will be female with confidence value of 0.964286. 
 
 Done. 
-Thank You! 
+Further developments are recommended for this project. Processing with larger dataset is advocated. 
 
+Thank You for reading!!

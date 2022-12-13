@@ -83,8 +83,12 @@ dummies = pd.get_dummies(df['sex'],prefix='sex')
 df = pd.concat([df,dummies],axis=1)
 df.drop('sex', axis=1, inplace=True)
 
-###### However, age will have one extra step which is cut  () method the covert the age into ranges. The range of ages was segmented into four bins: Children (0-14 years), Youth (15-24 years), Adults (25-64 years), and Seniors (65 years and over) Based on the Canada national statistical office. Link: https://www.statcan.gc.ca/en/concepts/definitions/age2 
+###### However, age will have one extra step which is cut  () method the covert the age into ranges. 
+The range of ages was segmented into four bins: Children (0-14 years), Youth (15-24 years), Adults (25-64 years), and Seniors (65 years and over) Based on the Canada national statistical office. Link: https://www.statcan.gc.ca/en/concepts/definitions/age2 
 
+## Data Visulization: 
+Checking the correlation of the features using Seaboem Heatmap, we removed 'goitre,'hypopituitary' features that are badly correlated with other features. 
+![image](https://user-images.githubusercontent.com/79324284/207426309-affdd60a-a159-4399-aec2-e3431684a04f.png)
 
 ## Association Rules Mining 
  ###### WE generate the frequent items using Apriori algorithm. with miniumum support of 0.01. Experimenting many thersholds, this value founded to give the best results. Reasons are that dataset is small and thyroid diseases are difficult to diagnose.

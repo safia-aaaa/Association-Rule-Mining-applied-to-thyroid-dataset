@@ -69,6 +69,12 @@ diagnoses = {
 df['target'] = df['target'].map(diagnoses)
 df.dropna(subset=['target'], inplace=True) 
 
+## Data Visulization
+using Seaborn library, we plot the distribution of the two conditions based on age and sex. We can observe that rules generated will relate to hypothyroid, females, adults. Catplot() mehtod is used to plot the catgorical features. 
+
+![image](https://user-images.githubusercontent.com/79324284/207425897-bbef7867-f0c1-402a-aefc-384481b1b6c8.png)
+
+
 ## One Hot Encoding 
 
 since there is Categorical features we dummy code them using get_dummies method. Then Concatenate the new columns to the dataset. Sex and Target are done in a similar way as below:
